@@ -39,16 +39,12 @@ Stick with conventions
 * Related entities as properties with ForeignKey property {RelatedEntityName}Id
 	+ ICollection&lt;RelatedEntity&gt; or RelatedEntity as type
 
-#### ResponseDto : IDomainToEntity&lt;TEntity&gt;
-
-For a Dto specify what entity it should be mapped from
-
 #### AbstractValidator&lt;TRequestIn&gt;
 
 If using Fluent Validation and need validation
 	
 #### IEndpointBuilder
-* MapRootRouteGroup - root builder that defines a prefix
+* MapEntityRouteGroup - entity route builder if routes map to entity operations
 * Map&lt;Verb&gt;As... - map endpoints
 	
 #### ITypeMapperBuilder&lt;TRequestIn, TEntity&gt;

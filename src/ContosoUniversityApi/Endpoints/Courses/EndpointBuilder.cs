@@ -7,12 +7,12 @@ public class EndpointBuilder : IEndpointBuilder
 {
     public IEndpointRouteBuilder Build(IEndpointRouteBuilder builder)
     {
-        var rootRouteGroup = builder.MapRootRouteGroup<Course>();
-        rootRouteGroup.MapGetAsNoFilterQueryable<CourseDto>();
-        rootRouteGroup.MapGetAsById<int, CourseDto>();
-        rootRouteGroup.MapPostAsInsert<InsertCourse, CourseDto>();
-        rootRouteGroup.MapPutAsUpdateById<int, UpdateCourse, CourseDto>();
-        rootRouteGroup.MapDeleteAsById<int, CourseDto>();
+        var entityRouteGroup = builder.MapEntityRouteGroup<Course, int, CourseDto>();
+        entityRouteGroup.MapGetAsNoFilterQueryable();
+        entityRouteGroup.MapGetAsById();
+        entityRouteGroup.MapPostAsInsert<InsertCourse>();
+        entityRouteGroup.MapPutAsUpdateById<UpdateCourse>();
+        entityRouteGroup.MapDeleteAsById();
 
         return builder;
     }

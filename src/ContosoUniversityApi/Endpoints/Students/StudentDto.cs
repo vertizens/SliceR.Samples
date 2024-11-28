@@ -1,9 +1,8 @@
 ﻿using ContosoUniversityApi.Data;
-using Vertizens.SliceR.Minimal;
 
 namespace ContosoUniversityApi.Endpoints.Students;
 
-public class StudentDto : IDomainToEntity<Student>
+public class StudentDto
 {
     public int Id { get; set; }
     public string LastName { get; set; }

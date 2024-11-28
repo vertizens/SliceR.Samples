@@ -1,11 +1,10 @@
 ﻿using ContosoUniversityApi.Data;
 using System.Linq.Expressions;
-using Vertizens.SliceR.Minimal;
 using Vertizens.TypeMapper;
 
 namespace ContosoUniversityApi.Endpoints.Instructors;
 
-public class InstructorDto : IDomainToEntity<Instructor>
+public class InstructorDto
 {
     public int Id { get; set; }
 

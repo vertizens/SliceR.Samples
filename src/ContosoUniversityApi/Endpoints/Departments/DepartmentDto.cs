@@ -1,9 +1,6 @@
-﻿using ContosoUniversityApi.Data;
-using Vertizens.SliceR.Minimal;
+﻿namespace ContosoUniversityApi.Endpoints.Departments;
 
-namespace ContosoUniversityApi.Endpoints.Departments;
-
-public class DepartmentDto : IDomainToEntity<Department>
+public class DepartmentDto
 {
     public int Id { get; set; }
     public string Name { get; set; }

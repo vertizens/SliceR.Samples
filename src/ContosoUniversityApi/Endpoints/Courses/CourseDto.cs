@@ -1,9 +1,6 @@
-﻿using ContosoUniversityApi.Data;
-using Vertizens.SliceR.Minimal;
+﻿namespace ContosoUniversityApi.Endpoints.Courses;
 
-namespace ContosoUniversityApi.Endpoints.Courses;
-
-public class CourseDto : IDomainToEntity<Course>
+public class CourseDto
 {
     public int Id { get; set; }
     public string Title { get; set; }
