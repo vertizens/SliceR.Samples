@@ -25,9 +25,9 @@ Register in dependency order
 services.AddDbContext...
 services.AddTypeMappers(); //TypeMapper
 services.AddSliceRHandlers(); //SliceR						
-services.AddSliceREntityFrameworkCoreDefaultHandlers(); //SliceR.Operations.EntityFrameworkCore
 services.AddSliceRValidatedHandlers(); //SliceR
 services.AddSliceREndpointBuilders(); //SliceR.Minimal
+services.AddSliceREntityFrameworkCoreDefaultHandlers(); //SliceR.Operations.EntityFrameworkCore
 services.AddSliceREndpointDefaultValidatedHandlers(); //SliceR.Minimal
 services.AddSliceRFluentValidators() //SliceR.Validated.Fluent
 ```

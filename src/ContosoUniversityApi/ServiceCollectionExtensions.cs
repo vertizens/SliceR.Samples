@@ -20,9 +20,9 @@ public static class ServiceCollectionExtensions
         //Add SliceR building blocks as needed
         services.AddTypeMappers();
         services.AddSliceRHandlers();
-        services.AddSliceREntityFrameworkCoreDefaultHandlers();
         services.AddSliceRValidatedHandlers();
         services.AddSliceREndpointBuilders();
+        services.AddSliceREntityFrameworkCoreDefaultHandlers();
         services.AddSliceREndpointDefaultValidatedHandlers();
         services.AddSliceRFluentValidators();
 
