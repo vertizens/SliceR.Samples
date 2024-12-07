@@ -17,10 +17,10 @@
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 	  </PackageReference>
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.11" />
-	  <PackageReference Include="Swashbuckle.AspNetCore" Version="7.0.0" />
-	  <PackageReference Include="Vertizens.SliceR.Minimal" Version="0.5.1-rc.1.1" />
-	  <PackageReference Include="Vertizens.SliceR.Operations.EntityFrameworkCore" Version="0.5.0-rc.1.5" />
-	  <PackageReference Include="Vertizens.SliceR.Validated.Fluent" Version="0.5.0-rc.1.4" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="7.1.0" />
+	  <PackageReference Include="Vertizens.SliceR.Minimal" Version="1.0.0" />
+	  <PackageReference Include="Vertizens.SliceR.Operations.EntityFrameworkCore" Version="1.0.0" />
+	  <PackageReference Include="Vertizens.SliceR.Validated.Fluent" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>
